@@ -30,3 +30,20 @@ body {
   flex-direction: column;
   min-height: 100dvh;
 }
+
+#format-widescreen {
+  display: none !important;
+}
+#format-mobile {
+  display: flex !important;
+}
+
+/* widescreen */
+@media only screen and (min-width: 780px) {
+  #format-widescreen {
+    display: flex !important;
+  }
+  #format-mobile {
+    display: none !important;
+  }
+}
